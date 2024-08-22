@@ -25,7 +25,7 @@ body{
 }
 
 .header{
-    padding: 2% 0 0 15%;
+    padding: 2% 0% 0% 15%;
 }
 
 .header__menu{
@@ -45,16 +45,15 @@ body{
 }
 
 .presentacion{
-    padding: 6% 15%;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .presentacion__contenido{
-    width: 615px;
-    display: flex;
-    flex-direction: column;
+    width: 50%;
     gap: 40px;
 }
 
@@ -77,7 +76,7 @@ body{
 }
 
 .presentacion__enlaces__link{
-    width: 378px;
+    width: 50%;
     text-align: center;
     padding: 21.5px 0;
     border-radius: 8px;
@@ -110,4 +109,27 @@ body{
     font-family: var(--fuente-montserrat);
     font-size: 24px;
     font-weight: 400;
+}
+
+.presentacion__imagen{
+    width: 50%;
+}
+
+
+@media (max-width: 1200px){
+    .header{
+        padding: 10%;
+    }
+
+    .header__menu{
+        justify-content: center;
+    }
+
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .presentacion__contenido{
+        width: auto;
+    }
 }
